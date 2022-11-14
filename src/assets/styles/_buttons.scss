@@ -1,0 +1,28 @@
+@use './colors' as colors;
+
+.btn {
+  padding: 1rem 1.5rem;
+  border: none;
+  background: colors.$anthill-blue;
+  color: colors.$anthill-white;
+  cursor: pointer;
+  position: relative;
+  border-radius: 3px;
+
+  &:hover {
+    background: rgba(colors.$anthill-blue, 0.9);
+  }
+
+  &:active {
+    top: 1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  }
+
+  &.btn-icon {
+    background: none;
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+}

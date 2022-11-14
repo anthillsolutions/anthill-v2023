@@ -1,0 +1,33 @@
+@use './colors' as colors;
+@use './variables' as variables;
+
+body {
+  font-family: 'MarkPro';
+  font-weight: 300;
+  height: 100vh;
+  font-size: variables.$font-large;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+a {
+  color: colors.$anthill-blue;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:visited {
+    color: colors.$anthill-blue;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
