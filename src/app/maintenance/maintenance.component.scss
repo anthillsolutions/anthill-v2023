@@ -32,7 +32,7 @@ footer {
 
   .description {
     height: 5rem;
-    background: colors.$anthill-very-light;
+    background: linear-gradient(90deg, colors.$anthill-very-light 50%, colors.$anthill-semi-light 100%);
     margin-bottom: 5rem;
     text-align: center;
     display: grid;
